@@ -292,7 +292,8 @@ val rindex_ofq : 'a -> 'a t -> int option
 *)
 
 val next : 'a t -> 'a node_t
-(**Compute and return the next value of the list*)
+(** Compute and return the first node (a [Cons]) from the list.  (This differs
+    from [hd], which returns first value, i.e. the first component of the node.) *)
 
 val length : 'a t -> int
 (**Return the length (number of elements) of the given list.
